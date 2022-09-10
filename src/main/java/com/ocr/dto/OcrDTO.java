@@ -1,15 +1,18 @@
 package com.ocr.dto;
 
+import org.springframework.web.multipart.MultipartFile;
+
 public class OcrDTO {
 
-	private String result;
+	private MultipartFile file;
 
-	public String getResult() {
-		return result;
+	public MultipartFile getFile() {
+		return file;
 	}
 
-	public OcrDTO setResult(String result) {
-		this.result = result;
+	public OcrDTO setFile(MultipartFile file) {
+		this.file = file;
+		
 		return this;
 	}
 		
